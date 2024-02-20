@@ -1,0 +1,24 @@
+.counter-main {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+.counter-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 2.25px;
+  border: 0.75px;
+  color: #475569;
+  outline: none;
+  border-style: solid;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 5px;
+  justify-content: center;
+}
+.mr {
+  margin-right: 5px;
+}

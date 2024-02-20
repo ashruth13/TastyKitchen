@@ -1,0 +1,254 @@
+.carosel-img {
+  height: 30vh;
+}
+.main-main {
+  width: 100vw;
+}
+.parentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-box {
+  width: 100%;
+  height: 250px;
+}
+.container {
+  padding: 20px;
+}
+.centers {
+  text-align: center;
+}
+.cent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+.None {
+  display: none;
+}
+.passiveColor {
+  padding: 10px;
+}
+.filter-popup {
+  display: flex;
+  flex-direction: column;
+}
+.activeColor {
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+.link {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  width: 15vw;
+}
+.optionsActive {
+  margin: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #475569;
+  padding: 10px;
+}
+.optionsPassive {
+  margin: 0px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #475569;
+  padding: 10px;
+  border-radius: 5px;
+}
+.error {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #64748b;
+}
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-img {
+  height: 250px;
+  width: 100%;
+}
+.outline {
+  border-style: solid;
+  padding: 2px;
+}
+.span-p {
+  display: flex;
+  align-items: center;
+}
+.item {
+  margin-top: 15px;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+}
+.item-input {
+  border: none;
+  outline: none;
+  width: 40vw;
+  padding: 5px;
+}
+.search-div {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-radius: 5px;
+  padding-left: 5px;
+  border-width: 1px;
+}
+.item-image {
+  width: 160px;
+  height: 100px;
+  top: 936px;
+  left: 24px;
+  border-radius: 8px;
+}
+.item-head {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #334155;
+}
+.item-rating {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+  color: #64748b;
+}
+.item-rate {
+  margin: 0px;
+  padding-left: 4px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #1e293b;
+}
+.ull {
+  margin-top: 5px;
+}
+.sub-item {
+  padding: 10px;
+}
+.item-div {
+  display: flex;
+  align-items: center;
+}
+.item-p {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.span {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+}
+.popular-p {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #64748b;
+}
+
+.popular-heading {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #183b56;
+}
+.mid {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dim {
+  height: 50vh;
+}
+.poi {
+  padding: 0px;
+}
+@media (min-width: 500px) {
+  .carousel-box {
+    width: 100%;
+    height: 250px;
+    margin-left: 0px;
+  }
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .wrap-adjust {
+    width: 350px;
+  }
+  .poi {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .carousel-img {
+    height: 250px;
+    width: 100%;
+  }
+  .search-div {
+    width: 350px;
+  }
+}

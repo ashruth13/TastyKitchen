@@ -1,0 +1,185 @@
+.banner {
+  background-image: url('https://res.cloudinary.com/dgw2vopar/image/upload/f_auto,q_auto/ce7veovkdadjiki5qqco');
+  background-size: cover;
+  height: 27vh;
+  width: 100%;
+  display: flex;
+}
+.each-btn {
+  cursor: pointer;
+  color: #ffa412;
+  border-color: #ffa412;
+  border-width: 2px;
+  outline: none;
+  border-style: solid;
+  font-size: 12px;
+  background: none;
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.each-img {
+  width: 160px;
+  height: 120px;
+  border-radius: 5.02px;
+}
+.po {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rest-card {
+  margin-left: 47vw;
+  padding: 20px;
+  padding-top: 30px;
+  padding-right: 10px;
+  color: white;
+}
+.rest-name {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+.rest-cuisine {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 8px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.rest-count {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.rest-p {
+  margin: 0px;
+  padding: 0px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.rest-f1 {
+  display: flex;
+}
+
+.rest-f2 {
+  display: flex;
+  align-items: center;
+}
+.rest-f3 {
+  margin-top: 7px;
+  padding-top: 3px;
+  height: 45px;
+  width: 90px;
+  border-width: 1px;
+  border-style: solid;
+  padding-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.rest-end {
+  padding-left: 10px;
+}
+
+.each-ul {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 0px;
+}
+.each-rating {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
+  color: #1e293b;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.each-price {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #334155;
+}
+.each-name {
+  margin: 0px;
+  padding: 0px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  color: #334155;
+}
+.each-two {
+  padding-left: 15px;
+}
+.each-li {
+  padding-top: 20px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .rest-img {
+    display: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .banner {
+    background-image: url('https://res.cloudinary.com/dgw2vopar/image/upload/f_auto,q_auto/lki3fcklyhlu6cgqcnff');
+    padding-left: 10vw;
+    display: flex;
+    align-items: center;
+  }
+  .rest-card {
+    margin-left: 2vw;
+  }
+  .rest-img {
+    height: 20vh;
+  }
+
+  .each-ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .each-li {
+    width: 37vw;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}

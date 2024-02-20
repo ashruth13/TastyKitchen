@@ -1,0 +1,62 @@
+.not-img {
+  width: 140px;
+  height: 155px;
+}
+.not-head {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1e293b;
+}
+.not-para {
+  margin: 0px;
+  padding: 0px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #475569;
+}
+.not-button {
+  cursor: pointer;
+  background-color: #f7931e;
+  outline: none;
+  border: none;
+  width: 98px;
+  height: 32px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  .not-img {
+    width: 269px;
+    height: 297px;
+  }
+  .not-head {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1e293b;
+  }
+  .not-button {
+    cursor: pointer;
+    background-color: #f7931e;
+    outline: none;
+    border: none;
+    width: 123px;
+    height: 48px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 8px;
+    color: white;
+  }
+}

@@ -1,0 +1,80 @@
+.no-img {
+  width: 203px;
+  height: 175px;
+}
+.no-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+}
+.op {
+  margin-bottom: 15px !important;
+}
+.cart-main {
+  min-height: 65vh;
+}
+.cart-price {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffa412;
+}
+.no-para {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #64748b;
+}
+.no-head {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #1e293b;
+}
+.no-button {
+  background-color: #f7931e;
+  outline: none;
+  border: none;
+  width: 93px;
+  height: 32px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .no-img {
+    width: 425px;
+    height: 367px;
+  }
+  .no-para {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #64748b;
+  }
+  .no-head {
+    font-family: DM Sans;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1e293b;
+  }
+}
