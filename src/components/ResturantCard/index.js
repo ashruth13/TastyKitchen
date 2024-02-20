@@ -81,7 +81,6 @@ class ResturantCard extends Component {
     if (localStorage.getItem('cartList') === null) {
       localStorage.setItem('cartList', JSON.stringify([]))
     }
-
     return (
       <ul className="each-ul">
         {foodItems.map(each => (

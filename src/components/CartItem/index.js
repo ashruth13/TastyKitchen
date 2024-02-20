@@ -12,6 +12,7 @@ class CartItem extends Component {
   }
 
   onIncrement = async () => {
+    const {onRefresh} = this.props
     await this.setState(prevState => ({quanity: prevState.quanity + 1}))
     const {quanity} = this.state
     const {info} = this.props
@@ -23,10 +24,11 @@ class CartItem extends Component {
       return each
     })
     await localStorage.setItem('cartList', JSON.stringify([...newStoredData]))
+    onRefresh()
   }
 
   decre = async () => {
-    const {info} = this.props
+    const {info, onRefresh} = this.props
     const {quanity} = this.state
     const storedData = JSON.parse(localStorage.getItem('cartList'))
     const newStoredData = await storedData.map(each => {
@@ -41,6 +43,7 @@ class CartItem extends Component {
 
     const newSd = newStoredData.filter(each => each !== null)
     await localStorage.setItem('cartList', JSON.stringify([...newSd]))
+    onRefresh()
   }
 
   onDecrement = async () => {
@@ -58,7 +61,7 @@ class CartItem extends Component {
   }
 
   render() {
-    const {info} = this.props
+    const {info, onRefresh} = this.props
     const {quanity} = this.state
     return (
       <li className="each-li">

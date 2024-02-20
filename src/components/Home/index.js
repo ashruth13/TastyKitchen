@@ -386,8 +386,11 @@ class Home extends Component {
     return (
       <TastyKitchen.Consumer>
         {value => {
-          const {activeTabId} = value
+          const {activeTabId, changeTabId} = value
           const {activePage, restaurantData} = this.state
+          if (activeTabId === 'CART') {
+            changeTabId('HOME')
+          }
           let empty = false
           if (restaurantData.length === 0) {
             empty = true
