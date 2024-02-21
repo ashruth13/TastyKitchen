@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Login from './components/Login'
 import Cart from './components/Cart'
 import Home from './components/Home'
+import Payment from './components/Payment'
 import TastyKitchen from './context/TastyKitchen'
 import ResturantCard from './components/ResturantCard'
 import NotFound from './components/NotFound'
@@ -42,6 +43,7 @@ class App extends Component {
             path="/restaurants/:id"
             component={ResturantCard}
           />
+          <ProtectedRoute exact path="/payment" component={Payment} />
           <ProtectedRoute exact path="/cart" component={Cart} />
           <Route component={NotFound} />
         </Switch>
