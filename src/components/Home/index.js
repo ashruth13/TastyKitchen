@@ -36,7 +36,7 @@ class Home extends Component {
     activePage: 1,
     inp: '',
     seinp: '',
-    sort: 'Lowest',
+    sort: 'Highest',
     restaurantData: [],
     carouselImages: [],
     caroselStatus: apiCarosel.initial,
@@ -62,7 +62,7 @@ class Home extends Component {
     this.setState({restStatus: apiRest.loading})
     const Token = Cookies.get('jwt_token')
     const {seinp, sort, activePage} = this.state
-    const limit = 10
+    const limit = 9
     const offset = (activePage - 1) * limit
     const url = `https://apis.ccbp.in/restaurants-list?search=${seinp}&sort_by_rating=${sort}&offset=${offset}&limit=${limit}`
 

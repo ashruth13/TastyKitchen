@@ -1,13 +1,20 @@
 import {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {GrClose} from 'react-icons/gr'
 import {IoMenuSharp} from 'react-icons/io5'
+import Cookies from 'js-cookie'
 import TastyKitchen from '../../context/TastyKitchen'
 import './index.css'
 
 class Header extends Component {
   state = {
     showDown: true,
+  }
+
+  logout = () => {
+    Cookies.remove('jwt_token')
+    const {history} = this.props
+    history.replace('/')
   }
 
   but = () => {
@@ -21,7 +28,6 @@ class Header extends Component {
           const {activeTabId, changeTabId} = value
           const {showDown} = this.state
           const change = activeId => {
-            console.log(activeId)
             changeTabId(activeId)
           }
           return (
@@ -65,7 +71,11 @@ class Header extends Component {
                     </li>
                   </Link>
                   <li className="li">
-                    <button className="noBtn butt" type="button">
+                    <button
+                      className="noBtn butt"
+                      type="button"
+                      onClick={this.logout}
+                    >
                       Logout
                     </button>
                   </li>
@@ -104,7 +114,11 @@ class Header extends Component {
                     Cart
                   </button>
                 </Link>
-                <button className="noBtn butt" type="button">
+                <button
+                  onClick={this.logout}
+                  className="noBtn butt"
+                  type="button"
+                >
                   Logout
                 </button>
               </div>
@@ -116,4 +130,4 @@ class Header extends Component {
   }
 }
 
-export default Header
+export default withRouter(Header)

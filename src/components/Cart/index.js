@@ -41,7 +41,6 @@ class Cart extends Component {
         {value => {
           const {activeTabId, changeTabId} = value
           const {items} = this.state
-          console.log(items)
           if (activeTabId === 'HOME') {
             changeTabId('CART')
           }
@@ -61,7 +60,7 @@ class Cart extends Component {
               0,
             )
             return (
-              <div className="cart-main">
+              <div className="cart-main each-divs">
                 <ul className="each-ul scroll">
                   {items.map(each => (
                     <CartItem info={each} onRefresh={this.onRefresh} />
@@ -123,7 +122,6 @@ class Cart extends Component {
 
           const decide = () => {
             const {status} = this.state
-            console.log(status)
             switch (status) {
               case apiStatus.loading:
                 return renderLoader()
@@ -169,35 +167,3 @@ class Cart extends Component {
 }
 
 export default Cart
-
-// import {Component} from 'react'
-// import CartItem from '../CartItem'
-
-// class Cart extends Component {
-//   state = {
-//     itemsList: [],
-//   }
-
-//   componentDidMount() {
-//     const itemsList = JSON.parse(localStorage.getItem('cartList'))
-//     this.setState({itemsList})
-//   }
-
-//   render() {
-//     const {itemsList} = this.state
-//     console.log(itemsList)
-//     return (
-//       <div>
-//         <ul className="cart-items-list">
-//           lo p
-//           {itemsList.map(e => (
-//             <CartItem key={e.id} itemDetails={e} />
-//           ))}
-//           <hr className="cart-items-line" />
-//         </ul>
-//       </div>
-//     )
-//   }
-// }
-
-// export default Cart

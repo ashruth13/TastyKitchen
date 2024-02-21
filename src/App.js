@@ -10,19 +10,6 @@ import TastyKitchen from './context/TastyKitchen'
 import ResturantCard from './components/ResturantCard'
 import NotFound from './components/NotFound'
 
-const sortByOptions = [
-  {
-    id: 0,
-    displayText: 'Highest',
-    value: 'Highest',
-  },
-  {
-    id: 2,
-    displayText: 'Lowest',
-    value: 'Lowest',
-  },
-]
-
 class App extends Component {
   state = {
     activeTabId: 'HOME',
@@ -53,3 +40,16 @@ class App extends Component {
 }
 
 export default App
+
+// const sortByOptions = [
+//   {
+//     id: 0,
+//     displayText: 'Highest',
+//     value: 'Highest',
+//   },
+//   {
+//     id: 2,
+//     displayText: 'Lowest',
+//     value: 'Lowest',
+//   },
+// ]

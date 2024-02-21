@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Counter from '../Counter'
+import './index.css'
 
 class CartItem extends Component {
   state = {
@@ -66,7 +67,7 @@ class CartItem extends Component {
     return (
       <li className="each-li">
         <img src={info.imageUrl} alt={info.id} className="each-img" />
-        <div className="each-two">
+        <div className="each-two koko">
           <p className="each-name op">{info.name}</p>
           <div className="counter-main">
             <button

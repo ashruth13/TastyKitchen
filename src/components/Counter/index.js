@@ -12,7 +12,6 @@ class Counter extends Component {
     const {count} = this.state
     const {info} = this.props
     const storedData = JSON.parse(localStorage.getItem('cartList'))
-    console.log(storedData)
     const newStoredData = storedData.map(each => {
       if (info.id === each.id) {
         return {...each, quanity: count}
@@ -49,7 +48,6 @@ class Counter extends Component {
 
     const newSd = newStoredData.filter(each => each !== null)
     localStorage.setItem('cartList', JSON.stringify([...newSd]))
-    console.log(localStorage.getItem('cartList'), count)
   }
 
   render() {

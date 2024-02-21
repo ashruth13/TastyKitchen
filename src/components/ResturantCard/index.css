@@ -104,9 +104,10 @@
 }
 
 .each-ul {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-top: 0px;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .each-rating {
   margin: 0px;
@@ -147,6 +148,7 @@
   padding-left: 15px;
 }
 .each-li {
+  width: 80vw;
   padding-top: 20px;
   list-style-type: none;
   display: flex;
@@ -160,6 +162,13 @@
 }
 
 @media (min-width: 500px) {
+  .each-li {
+    width: 59vw;
+    padding-top: 20px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
   .banner {
     background-image: url('https://res.cloudinary.com/dgw2vopar/image/upload/f_auto,q_auto/lki3fcklyhlu6cgqcnff');
     padding-left: 10vw;
@@ -172,14 +181,25 @@
   .rest-img {
     height: 20vh;
   }
-
-  .each-ul {
-    display: flex;
-    flex-wrap: wrap;
+  .each-name {
+    width: 20vw;
   }
-  .each-li {
-    width: 37vw;
-    margin-right: 30px;
-    margin-bottom: 30px;
+  .each-divs {
+    padding: 15px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border: 1px solid #0b69ff1a;
+    background: linear-gradient(
+        0deg,
+        rgba(11, 105, 255, 0.1),
+        rgba(11, 105, 255, 0.1)
+      ),
+      linear-gradient(0deg, #f9fbfe, #f9fbfe);
+  }
+
+  .each.lii {
+    width: 80vw;
   }
 }
